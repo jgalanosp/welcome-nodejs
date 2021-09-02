@@ -1,27 +1,29 @@
 {
-  "name": "express-mongo-boilerplate",
+  "name": "welcome-nodejs",
   "version": "1.0.0",
   "description": "Express JS application boilerplate with mongodb",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Test executed\"",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "clean": "echo \"Cleaning\"",
+    "build": "npm run clean"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thebrewery-craft/express-mongo-boilerplate.git"
+    "url": "git+https://github.com/jgalanosp/welcome-nodejs.git"
   },
   "keywords": [
     "expressjs",
-    "nodejs",
-    "mongodb"
+    "nodejs"
   ],
   "author": "mcalacal@stratpoint.com,rdelacruz@stratpoint.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thebrewery-craft/express-boilerplate/issues"
+    "url": "https://github.com/jgalanosp/welcome-nodejs/issues"
   },
-  "homepage": "https://github.com/thebrewery-craft/express-boilerplate#readme",
+  "homepage": "https://github.com/jgalanosp/welcome-nodejs#readme",
   "dependencies": {
     "eslint": "^7.29.0",
     "express": "^4.17.1",
