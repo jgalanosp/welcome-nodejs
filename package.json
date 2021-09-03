@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Test executed\"",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "./node_modules/.bin/eslint --ext .js,.vue --ignore-path .gitignore .",
     "clean": "echo \"Cleaning\"",
     "build": "npm run clean"
   },
