@@ -4,11 +4,9 @@
   "description": "Express JS application boilerplate with mongodb",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Test executed\"",
-    "lint": "./node_modules/.bin/eslint --ext .js,.vue --ignore-path .gitignore .",
-    "clean": "echo \"Cleaning\"",
-    "build": "npm run clean"
+    "start": "PORT=9000 node index.js",
+    "lint": "eslint {app,middleware,utils}/**/*.js",
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -25,9 +23,17 @@
   },
   "homepage": "https://github.com/jgalanosp/welcome-nodejs#readme",
   "dependencies": {
-    "eslint": "^7.29.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.11",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^2.2.5",
+    "should": "^7.0.2",
+    "chai": "^3.5.0",
+    "chai-http": "^4.3.0"
   }
 }
